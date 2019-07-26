@@ -1,14 +1,15 @@
-from ds_stack.stack import Stack
+from ds_stack.stack import Switcher
 
-print("Stack------------->")
+print("STACK SAMPLES \n ***************************")
 
-n = int(input("Enter the no of element to insert into stack"))
-print("enter element to insert:")
-stackElement = Stack()
-for i in range(0, n):
-    stackElement.push(input())
+print("Enter your option: \n -----------------------------")
+print("1:Stack with Array \n 2:Stack with Linked List")
 
-print("list all element in stack\n--------------------------------------------")
-stackElement.listElement()
-print("pop operation")
-stackElement.pop()
+switcher = Switcher()
+
+option = int(input())
+
+switcher.stack_type(option)
+
+
+
